@@ -96,3 +96,15 @@ test('toThrow', () => {
 	// // 不通过
 	// expect(throwNewErrorFunc).toThrow('aaaa')
 })
+
+test('toMatchObject', () => {
+	// toMatchObject 匹配 对象中包含某一部分
+	const a = {
+		aa: 11,
+		bb: 22
+	}
+	const b = {
+		bb: 22
+	}
+	expect(a).toMatchObject(b)
+})
