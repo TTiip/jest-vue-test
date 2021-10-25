@@ -1,13 +1,20 @@
 import { fetchData } from '../js/fetchData'
 
-test('fetchData 返回的结果为 { success: true }', () => {
-	// 此处一定要 return !!!!!
-	return fetchData().then(res => {
-		expect(res.data).toEqual({
-			success: true
-		})
+test('fetchData 返回的结果为 { success: true }', async () => {
+	const res = await fetchData()
+	expect(res.data).toEqual({
+		success: true
 	})
 })
+
+// test('fetchData 返回的结果为 { success: true }', () => {
+// 	// 此处一定要 return !!!!!
+// 	return fetchData().then(res => {
+// 		expect(res.data).toEqual({
+// 			success: true
+// 		})
+// 	})
+// })
 
 // test('fetchData 返回的结果为 { success: true }', () => {
 // 	// 此处一定要 return !!!!!
@@ -16,6 +23,17 @@ test('fetchData 返回的结果为 { success: true }', () => {
 // 			success: true
 // 		}
 // 	})
+// })
+
+// 出错的时候执行这个
+// test('fetchData 返回的结果为 404', async () => {
+// 	expect.assertions(1)
+// 	try {
+// 		await fetchData()
+// 	} catch (e) {
+// 		expect(e.toString().includes('404')).toBe(true)
+// 	}
+// 	// return expect(fetchData()).rejects.toThrow()
 // })
 
 // // 出错的时候执行这个
