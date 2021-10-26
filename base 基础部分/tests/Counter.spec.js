@@ -38,6 +38,7 @@ describe('Counter的测试代码', () => {
 			expect(counter.number).toBe(-1)
 		})
 
+
 		test('测试 Counter中的 minusTwo', () => {
 			console.log('minusTwo')
 			counter.minusTwo()
