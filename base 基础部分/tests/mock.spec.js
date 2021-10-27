@@ -1,8 +1,8 @@
-import { runCallBack, createObject, getData } from '../js/demo'
+import { runCallBack, createObject, getData } from '../js/mock'
 
 // jest 模拟xxxxx请求
 // 第一个参数 需要mock的请求 后面对应每个请求的返回值
-jest.mock('../js/demo', () => ({
+jest.mock('../js/mock', () => ({
 	__esModule: true,
 	getData: jest.fn(() => ({
 		value: 'getData'

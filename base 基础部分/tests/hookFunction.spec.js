@@ -1,4 +1,4 @@
-import Counter from '../js/Counter'
+import Counter from '../js/hookFunction'
 
 let counter = null
 
