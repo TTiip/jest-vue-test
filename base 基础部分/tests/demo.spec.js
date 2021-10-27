@@ -1,4 +1,3 @@
-import axios from 'axios'
 import { runCallBack, createObject, getData } from '../js/demo'
 
 // jest 模拟xxxxx请求
