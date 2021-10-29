@@ -13,4 +13,3 @@ describe('classFunc.js', () => {
 		expect(Util.mock.instances[0].b).toHaveBeenCalled()
 	})
 })
-
