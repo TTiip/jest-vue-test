@@ -12,6 +12,7 @@ describe('snapshot.js', () => {
 		expect(generateAnotherConfig()).toMatchSnapshot()
 	})
 
+
 	// 安装 prettier 包 使用 toMatchInlineSnapshot 生成一个快照当作第二个参数
 	// test("测试 generateConfig 函数", () => {
   //   // 快照时间 只要是Date类型即可 不用每次都相同
