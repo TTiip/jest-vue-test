@@ -28,5 +28,4 @@ describe('snapshot.js', () => {
   //   `
   //   )
   // })
-
 })
